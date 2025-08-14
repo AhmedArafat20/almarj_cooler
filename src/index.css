@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* ديسكتوب فقط */
+@media (min-width: 960px) {
+
+  /* حجم الخط الأساسي أكبر للموقع كله */
+  html {
+    font-size: 22px; /* بدل 16px الافتراضي */
+  }
+
+
+}

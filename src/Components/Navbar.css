@@ -1,0 +1,178 @@
+:root {
+  --brand: #16304F;
+  --text: #ffffff;
+  --text-dim: rgba(255,255,255,.85);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+html {
+  font-size: 16px; /* بدل 16px الافتراضي */
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--brand);
+  color: var(--text);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text);
+  text-decoration: none;
+  font-family: "Amiri", serif;
+}
+
+/* زر الهامبورجر */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 20px;
+  background: var(--text);
+  margin: 0 auto;
+}
+
+/* القائمة */
+.nav-links {
+  display: flex;
+  margin-top: 21px;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: transform 0.2s, background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,.1);
+  color: var(--text);
+  transform: scale(1.05);
+}
+
+/* زر التواصل داخل القائمة للموبايل */
+.mobile-contact .contact-btn {
+  width: 95%; /* أعرض شوي */
+  max-width: 300px; /* يحافظ على شكل مرتب */
+  font-size: 1.3rem; /* أكبر شوي */
+  padding: 14px 0; /* أعلى وأسفل أكبر */
+  background: #ffffff; /* خلفية بيضاء */
+  color: var(--brand); /* نص بلون البراند */
+  border-radius: 50px; /* حواف دائرية أكثر */
+  font-weight: 700;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* ظل خفيف يعطي بروز */
+}
+
+/* تأثير hover */
+.mobile-contact .contact-btn:hover {
+  background: var(--brand);
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15); /* زيادة البروز */
+}
+
+/* ديسكتوب */
+@media (min-width: 960px) {
+  .menu-toggle { display: none; }
+  .mobile-contact { display: none; }
+
+  /* زر التواصل ثابت على الشمال */
+  .nav-container::after {
+    content: "تواصل معنا";
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 14px 26px;
+    border-radius: 999px;
+    margin-left: auto;
+    text-decoration: none;
+  }
+}
+
+/* موبايل */
+@media (max-width: 959px) {
+  .nav-container {
+    justify-content: space-between;
+    direction: rtl;
+  }
+
+  .logo { order: 1; } /* الشعار على اليسار */
+  .menu-toggle { display: flex; order: 2; } /* الهامبورجر على اليمين */
+
+  .nav-links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--brand);
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    display: none;
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .desktop-contact { display: none; }
+  .mobile-contact { display: block; }
+}
