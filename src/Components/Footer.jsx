@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="footer-container">
 
                       <div className="footer-right">
-          <img src="/logo.png" alt="Almarj Logo" className="logo-img" />
+          <img src="/Images/truck.png" alt="Almarj Logo" className="logo-img" />
           <h2>شركة المرج</h2>
           <p className="tagline">اطلب تجدنا اينما كنت</p>
         </div>
