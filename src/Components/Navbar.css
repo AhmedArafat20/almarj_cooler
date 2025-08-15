@@ -126,20 +126,7 @@ html {
   .mobile-contact { display: none; }
 
   /* زر التواصل ثابت على الشمال */
-  .nav-container::after {
-    content: "تواصل معنا";
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    color: var(--brand);
-    font-weight: 700;
-    font-size: 1.3rem;
-    padding: 14px 26px;
-    border-radius: 999px;
-    margin-left: auto;
-    text-decoration: none;
-  }
+
 }
 
 /* موبايل */

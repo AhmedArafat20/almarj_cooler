@@ -26,7 +26,7 @@ const Footer = () => {
         {/* يسار: زر تواصل + سوشيال */}
 <div className="footer-left">
   <div className="contact-wrap">
-<a href="tel:0505973180" className="contact-btn">
+<a href="tel:966505973180" className="contact-btn">
   <i className="fas fa-phone"></i> تواصل معنا
 </a>
   </div>

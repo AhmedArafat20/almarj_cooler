@@ -6,17 +6,27 @@ export default function Navbar() {
   const [lastScroll, setLastScroll] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScroll = window.scrollY;
-      if (currentScroll === 0) setHidden(false);
-      else if (currentScroll > lastScroll) setHidden(false);
-      else setHidden(true);
-      setLastScroll(currentScroll);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScroll]);
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll === 0) {
+      // أول الصفحة
+      setHidden(false);
+    } else if (currentScroll > lastScroll) {
+      // بنعمل scroll down -> اختفي
+      setHidden(true);
+    } else {
+      // بنعمل scroll up -> ظهر
+      setHidden(false);
+    }
+
+    setLastScroll(currentScroll);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [lastScroll]);
 
   return (
     <>
@@ -24,6 +34,7 @@ export default function Navbar() {
         <div className="nav-container">
           {/* الشعار على اليمين */}
           <a href="#home" className="logo">شركة المرج</a>
+          
 
           {/* زر الهامبورجر للموبايل */}
           <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -40,12 +51,23 @@ export default function Navbar() {
               <li><a href="#about">من نحن</a></li>
 
               {/* زر تواصل معنا داخل القائمة للموبايل فقط */}
-              <li className="mobile-contact">
-                <a className="contact-btn" href="tel:0505973180">
-                  تواصل معنا
-                </a>
-              </li>
+<li className="mobile-contact">
+  <a
+    className="contact-btn"
+    href={navigator.userAgent.includes("Mobi") ? "tel:+966505973180" : "#"}
+    onClick={(e) => {
+      if (!navigator.userAgent.includes("Mobi")) {
+        e.preventDefault();
+        navigator.clipboard.writeText("+966505973180");
+        alert("رقم الهاتف تم نسخه: +966505973180");
+      }
+    }}
+  >
+    تواصل معنا
+  </a>
+</li>
             </ul>
+            
           </nav>
         </div>
       </header>
@@ -61,7 +83,7 @@ export default function Navbar() {
 </a>
             {/* زر اتصال عائم */}
       <a 
-        href="tel:0505973180" 
+        href="tel:966505973180" 
         className="call-float"
       >
         <img src="/Images/telephone.png" alt="Call Us" />
