@@ -7,25 +7,25 @@ export default function Videos() {
       <div className="videos-grid">
         <div className="video-card">
           <video controls muted>
-            <source src="/Images/Video1.mp4" type="video/mp4" />
+            <source src="/Video1.mp4" type="video/mp4" />
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
         <div className="video-card">
           <video controls muted>
-            <source src="/Images/Video2.mp4" type="video/mp4" />
+            <source src="/Videos/Video2.mp4" type="video/mp4" />
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
         <div className="video-card">
           <video controls muted>
-            <source src="/Images/Video3.mp4" type="video/mp4" />
+            <source src="/Videos/Video3.mp4" type="video/mp4" />
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
         <div className="video-card">
           <video controls muted>
-            <source src="/Images/Video4.mp4" type="video/mp4" />
+            <source src="/Videos/Video4.mp4" type="video/mp4" />
             متصفحك لا يدعم تشغيل الفيديو.
           </video>
         </div>
