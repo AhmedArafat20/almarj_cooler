@@ -51,14 +51,14 @@ export default function Navbar() {
       </header>
 
       {/* زر واتساب عائم */}
-      <a 
-        href="https://wa.me/0505973180" 
-        className="whatsapp-float" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        <img src="/Images/logo.png" alt="Whatsapp" />
-      </a>
+<a 
+  href="https://wa.me/966505973180" 
+  className="whatsapp-float" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <img src="/Images/logo.png" alt="Whatsapp" />
+</a>
             {/* زر اتصال عائم */}
       <a 
         href="tel:0505973180" 
