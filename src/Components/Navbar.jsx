@@ -57,14 +57,14 @@ export default function Navbar() {
         target="_blank" 
         rel="noopener noreferrer"
       >
-        <img src="../../public/Images/logo.png" alt="Whatsapp" />
+        <img src="/Images/logo.png" alt="Whatsapp" />
       </a>
             {/* زر اتصال عائم */}
       <a 
         href="tel:0505973180" 
         className="call-float"
       >
-        <img src="../../public/Images/telephone.png" alt="Call Us" />
+        <img src="/Images/telephone.png" alt="Call Us" />
       </a>
     </>
   );

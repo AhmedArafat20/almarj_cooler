@@ -8,7 +8,7 @@ export default function Home() {
         <p className="tagline">اطلب تجدنا أينما كنت</p>
       </div>
       <div className="home-image">
-        <img src="../../public/Images/webp.jpg" alt="شاحنة التبريد" />
+        <img src="/Images/webp.jpg" alt="شاحنة التبريد" />
       </div>
     </section>
   );
