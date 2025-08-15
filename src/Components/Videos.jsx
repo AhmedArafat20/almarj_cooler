@@ -8,25 +8,25 @@ export default function Videos() {
         <div className="video-card">
           <video controls muted>
             <source src="/Videos/video1.mp4" type="video/mp4" />
-            متصفحك لا يدعم تشغيل الفيديو.
+            متصفحك لا يدعم تشغيل الفيديو
           </video>
         </div>
         <div className="video-card">
           <video controls muted>
             <source src="/Videos/video2.mp4" type="video/mp4" />
-            متصفحك لا يدعم تشغيل الفيديو.
+            متصفحك لا يدعم تشغيل الفيديو
           </video>
         </div>
         <div className="video-card">
           <video controls muted>
             <source src="/Videos/video3.mp4" type="video/mp4" />
-            متصفحك لا يدعم تشغيل الفيديو.
+            متصفحك لا يدعم تشغيل الفيديو
           </video>
         </div>
         <div className="video-card">
           <video controls muted>
             <source src="/Videos/video4.mp4" type="video/mp4" />
-            متصفحك لا يدعم تشغيل الفيديو.
+            متصفحك لا يدعم تشغيل الفيديو
           </video>
         </div>
       </div>
