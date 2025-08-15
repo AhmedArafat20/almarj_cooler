@@ -7,7 +7,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 html {
-  font-size: 16px; /* بدل 16px الافتراضي */
+  /* font-size: 16px; بدل 16px الافتراضي */
 }
 .navbar {
   position: sticky;
