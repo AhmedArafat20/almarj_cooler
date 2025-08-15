@@ -1,0 +1,74 @@
+.services-section {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #16304F;
+}
+
+.service-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.service-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-text {
+  flex: 1;
+  text-align: right;
+}
+
+.service-text h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0d2235;
+}
+
+.service-text p {
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.service-image {
+  flex: 1;
+  text-align: center;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-image img:hover {
+  transform: scale(1.05);
+}
+
+/* 🎯 موبايل */
+@media (max-width: 768px) {
+  .service-item,
+  .service-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service-text {
+    text-align: center;
+  }
+
+  .service-image img {
+    max-width: 80%;
+  }
+}

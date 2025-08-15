@@ -17,16 +17,16 @@ const Footer = () => {
         <div className="footer-center">
           <h3>📍 فروعنا</h3>
           <ul>
-            <li>القاهرة - مدينة نصر</li>
-            <li>الإسكندرية - سموحة</li>
-            <li>الجيزة - الدقي</li>
+            <li>الرياض</li>
+            <li>الدمام</li>
+            <li>جده</li>
           </ul>
         </div>
 
         {/* يسار: زر تواصل + سوشيال */}
 <div className="footer-left">
   <div className="contact-wrap">
-<a href="tel:+20123456789" className="contact-btn">
+<a href="tel:0505973180" className="contact-btn">
   <i className="fas fa-phone"></i> تواصل معنا
 </a>
   </div>

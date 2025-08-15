@@ -176,3 +176,52 @@ html {
   .desktop-contact { display: none; }
   .mobile-contact { display: block; }
 }
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* زر الاتصال */
+.call-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 90px;  /* فوق زر الواتساب */
+  right: 20px;
+  background-color: #0a74da;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.2s;
+}
+
+.call-float img {
+  width: 30px;
+  height: 30px;
+}
+
+.call-float:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,63 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@600&family=Rakkas&display=swap');
+
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: #f9f9f9;
+  gap: 40px;
+}
+
+.home-content {
+  max-width: 600px;
+  text-align: right;
+}
+
+.main-title {
+  font-family: "Rakkas", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #16304F;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 2rem;
+  color: #0d2235;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-size: 1.9rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.home-image img {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+/* 🎯 تعديلات الموبايل */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;   /* الصورة هتبقى تحت الكلام */
+    text-align: center;       /* الكلام يتظبط في النص */
+  }
+
+  .home-content {
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 80%;  /* تكبير الصورة شوية في الموبايل */
+    margin-top: 20px;
+  }
+}
