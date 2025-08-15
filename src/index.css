@@ -12,3 +12,18 @@ html, body {
 
 
 }
+html {
+  font-size: 16px; /* الأساس */
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 22px; /* أكبر على الشاشات الكبيرة */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 17px; /* أصغر على الموبايل */
+  }
+}
