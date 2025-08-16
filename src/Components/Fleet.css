@@ -13,6 +13,11 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 أعمدة في الكمبيوتر */
   gap: 20px;
+  justify-items: center; /* كل عنصر يتوسّط في العمود المتاح */
+}
+
+.fleet-item {
+  width: 100%; /* يملأ العمود */
 }
 
 .fleet-item img {

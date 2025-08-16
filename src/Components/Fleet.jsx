@@ -3,11 +3,10 @@ import React from "react";
 import "./Fleet.css";
 
 const images = [
-  "/Images/img5.webp",
+  "/Images/img1.jpg",
   "/Images/img6.jpg",
   "/Images/img7.jpeg",
   "/Images/img8.webp",
-  "/Images/img1.jpg",
   "/Images/img2.jpg",
   "/Images/img4.jpg",
   "/Images/img9.webp",
