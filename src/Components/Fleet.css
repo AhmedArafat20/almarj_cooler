@@ -1,0 +1,43 @@
+.fleet-section {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.fleet-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #16304F;
+}
+
+.fleet-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 أعمدة في الكمبيوتر */
+  gap: 20px;
+}
+
+.fleet-item img {
+  width: 100%;
+  height: 320px; /* كل الصور نفس الارتفاع */
+  object-fit: cover; /* يخلي الصورة تتقص بحيث كلها تطلع متساوية */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.fleet-item img:hover {
+  transform: scale(1.05); /* تكبير بسيط عند المرور */
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fleet-grid {
+    grid-template-columns: repeat(2, 1fr); /* عمودين على التابلت */
+  }
+}
+
+@media (max-width: 480px) {
+  .fleet-grid {
+    grid-template-columns: 1fr; /* عمود واحد على الموبايل */
+  }
+}
