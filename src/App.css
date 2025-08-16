@@ -2,3 +2,27 @@ html, body {
   margin: 0;
   padding: 0;
 }
+body {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* الهواتف الصغيرة */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px; /* ثابت */
+  }
+}
+
+/* الهواتف الكبيرة / تابليت */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 17px; /* شوية أكبر لل readability */
+  }
+}
+
+/* أجهزة الكمبيوتر / دسكتوب */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px; /* ثابت وواضح */
+  }
+}
